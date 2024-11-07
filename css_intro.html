@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Syntax for Internal CSS  */
+        table{
+            border: 1px solid blue;
+        }
+        .second-heading{
+            /* hex code color */
+            color: #ff8080; /* 0 to 255 */
+            color: rgba(255,0,0,0.25);
+            background-color: #ff8080;
+            font-size: 50px;
+            font-weight: 100;
+        }
+        #first-table{
+            border: 1px solid brown;
+        }
+    </style>
+</head>
+<body>
+    <!-- 3 types of CSS -->
+    <!-- Inline CSS, Internal CSS & External CSS -->
+    <!-- 3 types of Selectors -->
+    <!-- Element Selector: h1 - h6, p, table, form, input -->
+    <!-- Class selector:  '.' class name -->
+    <!-- ID selector: '#' with id name -->
+    <h1>This is a heading</h1>
+    <h1 class="second-heading">This is a second heading</h1>
+    <table class="second-heading custom-table" id="first-table">
+        <tr>
+            <th>Heading</th>
+            <th>Heading</th>
+        </tr>
+        <tr>
+            <td>Body</td>
+            <td>Body</td>
+        </tr>
+    </table>
+</body>
+</html>

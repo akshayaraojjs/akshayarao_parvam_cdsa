@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Internal CSS -->
+    <style>
+        table, td{
+            border: 2px dashed gold;
+            border-collapse: collapse;
+            /* padding: 5px; */
+            margin: 20px;
+            width: 200px;
+            height: 50px;
+            text-align: left;
+            vertical-align: middle;
+        }
+        /* ul li{
+            list-style-image: url('images/tiger.png');
+            background-size: 10px 10px;
+        } */
+         .parent{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 30px;
+            justify-content: space-around;
+            align-items: center;
+            width: 1000px;
+            height: 500px;
+            border: 2px dashed red;
+            background-color: aqua;
+         }
+         .child{
+            width: 50px;
+            height: 50px;
+            border: 1px solid brown;
+         }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>6</td>
+            <td>7</td>
+            <td>8</td>
+        </tr>
+        <tr>
+            <td>9</td>
+            <td>10</td>
+            <td>11</td>
+            <td>12</td>
+        </tr>
+    </table>
+    <p style="text-align: justify;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit explicabo repellendus sit praesentium similique eius quis dolor, facere magni provident modi quidem blanditiis, ex quia quas voluptatibus non dolorem dolore totam suscipit unde ducimus quasi incidunt possimus. Modi optio quos non officia nemo, exercitationem officiis consectetur consequatur, iusto, animi sequi? Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero inventore atque voluptatum libero dolores voluptatibus obcaecati dignissimos itaque ratione consectetur excepturi modi illum iste assumenda necessitatibus, ipsum earum nulla tempore mollitia. Modi, est repellat ex dolorem non enim ipsam id temporibus itaque dolor veritatis necessitatibus maxime magnam soluta porro esse deleniti deserunt nesciunt ducimus aliquam, excepturi delectus quam ipsa tenetur? Enim officia maxime ullam id asperiores, ut nemo quo alias! Consequuntur voluptatum ullam rem quibusdam voluptate doloremque autem fuga, perferendis adipisci saepe, ea minus ipsam repudiandae quidem totam velit commodi! Corrupti, voluptatibus laudantium eius quisquam sint illum animi optio totam!</p>
+    <ul>
+        <li>List Items</li>
+        <li>List Items</li>
+        <li>List Items</li>
+        <li>List Items</li>
+    </ul>
+    <!-- CSS Flexbox -->
+     <div class="parent">
+        <div class="child">Child 1</div>
+        <div class="child">Child 2</div>
+        <div class="child">Child 3</div>
+        <div class="child">Child 4</div>
+        <div class="child">Child 5</div>
+        <div class="child">Child 6</div>
+        <div class="child">Child 7</div>
+        <div class="child">Child 8</div>
+        <div class="child">Child 1</div>
+        <div class="child">Child 2</div>
+        <div class="child">Child 3</div>
+        <div class="child">Child 4</div>
+        <div class="child">Child 5</div>
+        <div class="child">Child 6</div>
+        <div class="child">Child 7</div>
+        <div class="child">Child 8</div>
+        <div class="child">Child 5</div>
+        <div class="child">Child 6</div>
+        <div class="child">Child 7</div>
+        <div class="child">Child 8</div>
+        <div class="child">Child 5</div>
+        <div class="child">Child 6</div>
+        <div class="child">Child 7</div>
+        <div class="child">Child 8</div>
+     </div>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 200px;
+            height: 200px;
+            background-color: crimson;
+            /* box-shadow: x-direction, y-direction, blur, spread, */
+            box-shadow: 20px 10px 20px 1px grey,
+                        10px 20px 30px gray,
+                        -10px -10px 20px lightgray;
+        }
+        h1{
+            text-shadow: 1px 2px 5px red,
+                         0.2px 0.5px 10px blue;
+        }
+        button:hover{
+            box-shadow: 1px 2px 5px brown;
+        }
+        p{
+            width: 100px;
+            height: 60px;
+            overflow: hidden;
+            border: 1px solid brown;
+            text-overflow: ellipsis;
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+    <h1>This is a heading</h1>
+    <button>Submit</button>
+    <p>Lorem ipsum dolor sit amet consecteturgyhj adipisicing elit. Vero, omnis?</p>
+</body>
+</html>

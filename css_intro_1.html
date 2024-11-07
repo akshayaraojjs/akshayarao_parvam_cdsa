@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Syntax for Internal CSS  */
+        table{
+            border: 1px solid blue;
+        }
+        .second-heading{
+            /* hex code color */
+            color: #ff8080; /* 0 to 255 */
+            color: rgba(255,0,0,0.25);
+            background-color: #ff8080;
+            font-size: 50px;
+            font-weight: 100;
+            /* border: 2px double black; */
+        }
+        #first-table{
+            border: 1px solid brown;
+        }
+        .box{
+            width: 200px;
+            height: 200px;
+            /* background-color: brown; */
+            /* background-image: url('images/lion.jpg');
+            background-size: contain;
+            background-repeat: no-repeat; */
+            border-width: 10px;
+            border-color: chocolate;
+            border-style: ridge;
+            /* shorthand property */
+            border: 5px solid blueviolet;
+            border-left: 8px dashed red;
+            border-radius: 100px;
+            border-top-left-radius: 50px;
+            border-top-right-radius: 80px;
+            border-bottom-right-radius: 80px;
+            border-bottom-left-radius: 50px;
+        }
+        .dif-font{
+            font-family: "Roboto", sans-serif;
+            font-weight: 800;
+            font-style: normal;
+        }
+        @font-face {
+            font-family: Roboto1;
+            src: url(font/Roboto-Regular.ttf);
+        }
+        .download-font{
+            font-family: Roboto1;
+            font-size: 30px;
+            color: crimson;
+            font-weight: bolder;
+            margin: 40px;
+            /* right, left, top, bottom */
+            /* margin: top, right, bottom, left */
+            margin: 50px 20px 30px 10px;
+            padding: 30px;
+            padding: 50px 20px 30px 10px;
+            padding: 50px 30px 20px;
+            border: 2px solid blue;
+        }
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- 3 types of CSS -->
+    <!-- Inline CSS, Internal CSS & External CSS -->
+    <!-- 3 types of Selectors -->
+    <!-- Element Selector: h1 - h6, p, table, form, input -->
+    <!-- Class selector:  '.' class name -->
+    <!-- ID selector: '#' with id name -->
+    <h1>This is a heading</h1>
+    <h1 class="second-heading">This is a second heading</h1>
+    <table class="second-heading custom-table" id="first-table">
+        <tr>
+            <th>Heading</th>
+            <th>Heading</th>
+        </tr>
+        <tr>
+            <td>Body</td>
+            <td>Body</td>
+        </tr>
+    </table>
+    <table class="second-heading custom-table" id="first-table">
+        <tr>
+            <th>Heading</th>
+            <th>Heading</th>
+        </tr>
+        <tr>
+            <td>Body</td>
+            <td>Body</td>
+        </tr>
+    </table>
+    <h1>This is a <span style="color: blue;">heading</span></h1>
+    <h1>This is a <span style="color: blue;">heading</span></h1>
+    <p>This is a para</p><p>This is a second para</p>
+    <div>This is a div</div>
+    <div>This is a div</div>
+    <span style="background-color: aquamarine;">This is a span</span>
+    <span >This is another span</span>
+    <div class="box"></div>
+    <!-- Two types of Elements: Block Elements & Inline Elements-->
+     <h1 class="dif-font">This is different font</h1>
+     <h1 class="download-font">This is different font</h1>
+     <h1 class="download-font">This is different font</h1>
+</body>
+</html>
